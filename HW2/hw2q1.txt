@@ -1,0 +1,10 @@
+Part (a): Every action line in a makefile must start with a: 
+	TAB (1)
+Part (b):
+	'make clean' command will get rid of all the object files and executables that are dependent on that makefile.
+		rm -rf *o hello
+	'make shape1' command will then recompile and create object files and executables specifically under shape1 target, such as 'g++ -c -o shape1.o shape1.cpp'
+Part (c):
+
+Part (d):
+	2, 4

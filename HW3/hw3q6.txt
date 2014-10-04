@@ -1,0 +1,24 @@
+Map();
+	simply does not do anything itself. The List is initialized by its private variable List<...> internalStorage declared.
+
+~Map();
+	List is destroyed by its own destructor. Map destructor does not do much on its own.
+	
+int size () const;
+	size() function for Map will also be ト(n) as size() function in List, since it calls for size() for list and therefore goes through every element in the List (n) to get the size.
+	
+void add (const keyType& key, const valueType & value);
+	The function automatically adds to the end of the list, therfore has runtime of ト(1) since no specific position is given by the user when adding. It runs insert() function from List, which has a tail and can add easily to the back, but it intially checks to see if there's a duplicate key existing in the database, which has a runtime of ト(n). Therfore the final runtime of add() function is ト(n).
+
+void remove (const keyType & key);
+	Similarly to add(), The function initially checks to see if key exists in the database and if so, it finds the position through find(), which has a runtime of ト(n). Then, it obtains the position from find() function and use remove() from List, which also iterates through the List till it finds the key then removes the key (ト(n)). Therfore the total runtime of remove function is ト(3n), but ultimately ト(n) since we disregard constants.
+	
+valueType & get (const keyType & key) const;
+	get() also intially checks for key (ト(n)), and finds the position of key if it exists (ト(n)), and uses get() from List to obtain the value associated with the key (ト(n)). Therfore the total runtime of get() is ト(n) since we disregard constants.
+
+int find(const keyType & key) const;
+	find() function looks for the position of the item associated with the key, which iterates through the list once. Therfore the runtime is ト(n).
+	
+bool check(const keyType & key) const;
+	check function utilizes find(), which iterates through the list once, and if it returns -1 meaning it does not exist in the database, and returns position if it exists. Therefore the runtime is ト(n).
+	

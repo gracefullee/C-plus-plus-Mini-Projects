@@ -1,0 +1,39 @@
+Part (B)
+	break main
+	break factorial
+Part (C)
+	1. 	The bug was that in factorial(), variable "i" began from 0 and multiplied "num" by 0 first, which made "num" zero from then on, since zero multiplied by anything is zero.
+	2.	run
+		n
+		n
+		n
+		print test[i]
+		n
+		print i
+		print num
+		n
+		n
+		print num
+Part (D)
+	No. factorial of 1 is correct, but other factorials resulted in negative numbers.
+	1. 	The bug was that num kept increasing in the for loop, therefore increasing the number of iterations for the for loop as the program went on. It ultimately resulted in infinite loop and printed out garbage.
+	2.	break factorial
+		n
+		n
+		n
+		print i
+		print num
+		n
+		n
+		print i
+		n
+		print num
+		n
+		print num
+Part (E)
+	Yes. I added
+		int limit = num;
+		num = 1;
+	and made for loop run until it equals to limit
+			
+	

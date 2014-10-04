@@ -1,0 +1,19 @@
+Linked List
+        Front Insert:   4.468
+        Back Insert:    18.157
+Plus One Array List
+        Front Insert:   7.86
+        Back Insert:    3.765
+Plus Ten Array List
+        Front Insert:   4.313
+        Back Insert:    0.39
+Doubling Array List
+        Front Insert:   3.953
+        Back Insert:    0
+	
+DoublingArrayList was the fastest implementation, because runtime is linear while others are constants.
+For example, LinkedList<T> and PlusOneArrayList<T> adds one item essentially each time it inserts, n+1 and therefore O(n).
+PlusTenArrayList<T> adds 10 items each time it runs out, n+10, which is also O(n).
+But DoublingArrayList<T> doubles capacity each time it runs out, 2*n which is also O(n).
+Although we disregard constants, 2n is definitely faster than n+10 or n+1 with large inputs.
+Therefore DoublingArrayList<T> is the most efficient resize() implementation.

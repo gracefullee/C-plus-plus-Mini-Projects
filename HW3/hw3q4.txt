@@ -1,0 +1,20 @@
+Problem 4 (Running Time Analysis)
+	Insert function:
+		Running time for insert function would be ト(n) because big-O would evaluate worst-case scenario which would then mean traveling through the entire list to find the position.
+		Because we do not have any information on position of each item, it would make us traverse the list entirely (at worst case) to find the position we desire to insert at. 
+	Remove function:
+		Running time for remove function would also be ト(n) because we would traverse through the list to find desire position, and once we make a copy and reconnect previous item with next item.
+		Then everything will be in its order and we can remove the item copied.
+		Lower bound of worst case would be omega(n) and upper bound would also be O(n).
+	Set function:
+		Running time for set function would also be ト(n) as synonymous to two above functions.
+		To get the position we desire, we would have to traverse through the list, at most, through n items.
+		Then we can set the item to new value given, and therefore running time would be ト(n).
+	Get function:
+		Running time for get function would also be ト(n) as we traverse through the list to get to our desired position.
+		At the worst case, it would traverse through n number of items, which would make running time ト(n).
+	Size function:
+		Size function would have a running time of ト(n) as well because the function would traverse through the list until the item's next equals NULL.
+		The size function would travel through n number of items regardless and therefore would have a running time of ト(n).
+	
+	

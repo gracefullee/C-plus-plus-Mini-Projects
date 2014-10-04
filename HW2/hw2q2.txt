@@ -1,0 +1,12 @@
+Part (a): unmodified
+Part (b): README.md is modified and fun_problem.txt is untracked
+Part (c): README.md and fun_problem.txt are both staged
+Part (d): both README.md and fun_problem.txt are both modified. Yet previous changes (staged has been removed) has yet been pushed to git.
+	Branch is ahead of 'origin/master' by 1 commit as well.
+Part (e): README.md is staged to be commited and fun_problem.txt is unmodified. All changes has been reverted back.
+Part (f): README.md has some changes that is staged for commit and future changes that has been modified, but not staged. This stage was reached because previous change to README.md has not been pushed, but just staged. Therefore this previous change is still staged for commit while the change made after has not yet been staged for commit and maintains its modified status.
+Part (g): TAs will see
+	">figure courtesy of the [Pro Git](http://git-scm.com/book) book by Scott Chacon
+	Markdown is easy
+	
+Markdown is too easy" for README.md
